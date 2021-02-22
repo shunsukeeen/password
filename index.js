@@ -1,22 +1,22 @@
 // 現在のパスワードの変数
-var nowPassword = document.getElementById("now_password");
+const nowPassword = document.getElementById("now_password");
 let passwordValue = "aaaaa";
 nowPassword.textContent = "現在のパスワードは"+ passwordValue;
 
 // パスワード設定失敗時のアラート機能
-let add = document.createElement("p");
-let sample = document.getElementById("form");
+const add = document.createElement("p");
+const sample = document.getElementById("form");
 document.body.insertBefore(add,sample.nextSibling);
 
 
 // ボタンを押す
 document.getElementById("set_password()").onclick = function(){
     // 入力した文字を取得
-    var confirmPassword = document.getElementById("confirm_password").value;
-    var newPassword = document.getElementById("new_password").value;
+    const confirmPassword = document.getElementById("confirm_password").value;
+    const newPassword = document.getElementById("new_password").value;
     // 入力した文字数をカウント
-    var passwordLength = newPassword.length;
-    var confirmLength = confirmPassword.length;
+    const passwordLength = newPassword.length;
+    const confirmLength = confirmPassword.length;
     // 入力欄の内容をクリア
     const newInput = document.getElementById("confirm_password");
     newInput.value = "";
